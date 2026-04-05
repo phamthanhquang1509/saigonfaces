@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trung Tâm Triển Lãm Đương Đại | SAIGONFACES</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="cursor"></div>
+
+  <nav>
+    <a href="index.html" class="nav-logo">SAIGONFACES</a>
+    <div class="nav-links">
+      <a href="nghe-thuat-tao-hinh.html">Nghệ Thuật Tạo Hình</a>
+      <a href="hanh-trinh-van-hoa.html">Hành Trình Văn Hóa</a>
+      <a href="y-tuong-kien-truc.html" class="active">Ý Tưởng Kiến Trúc</a>
+    </div>
+  </nav>
+
+  <!-- Article Header -->
+  <header class="article-header parallax-img">
+    <img src="https://images.unsplash.com/photo-1541888086925-920a0b62e08e?auto=format&fit=crop&w=2000&q=80" alt="Cover Image">
+    <div class="container" style="height: 100%; display: flex; align-items: flex-end; position: relative; z-index: 2; padding-bottom: 5vw;">
+      <div class="article-header-content fade-up">
+        <div class="article-meta">Đồ Án K1 • BỞI NGUYỄN VĂN A • 02/04/2026</div>
+        <h1 class="title-giant" style="font-size: clamp(3rem, 6vw, 8rem); margin-bottom: 0;">TRUNG TÂM TRIỂN LÃM ĐƯƠNG ĐẠI</h1>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article class="article-content">
+      <p class="fade-up">
+        Dự án Trung Tâm Triển Lãm Đương Đại là một thể nghiệm kiến trúc tôn vinh nghệ thuật tối giản (minimalism) và tối đa hóa khả năng tương tác của ánh sáng tự nhiên. Nằm tại khu vực lõi trung tâm thành phố, công trình không thiết lập ranh giới cứng nhắc với môi trường xung quanh mà tựa hồ như một khối tinh thể hòa vào bối cảnh.
+      </p>
+
+      <h2 class="fade-up">KHỐI TÍCH VÀ KHÔNG GIAN</h2>
+      <p class="fade-up">
+        Ngôn ngữ thiết kế chủ đạo dựa trên sự giao thoa của hai khối hình hộp lập phương bị cắt vát có chủ đích. Việc tổ chức không gian rỗng ở trung tâm giúp điều hướng sự lưu thông của gió và phân tán ánh sáng mặt trời theo các góc độ khác nhau trong ngày. Các vật liệu thô mộc như bê tông trần, kính cường lực nguyên khối và thép không gỉ được giữ nguyên bản màu sắc, qua đó bộc lộ trọn vẹn đặc tính nguyên thủy của chúng.
+      </p>
+
+      <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=80" alt="Mặt đứng công trình" class="fade-up parallax-img">
+      <div class="article-caption fade-up">Góc nhìn phối cảnh từ quảng trường trung tâm</div>
+
+      <p class="fade-up">
+        Bên cạnh đó, việc ứng dụng các nguyên lý bố cục đường nét thị giác dẫn dắt người xem từ sảnh ngoài đến các lớp phòng trưng bày bên trong tạo ra trải nghiệm có tính nhịp điệu. Các vách ngăn không chạm trần, cảm giác phi trọng lượng, một sự giải phóng hoàn toàn khỏi cấu trúc cột chịu lực truyền thống.
+      </p>
+
+      <!-- Like and Share Actions -->
+      <div class="article-actions fade-up">
+        <button class="btn-action" id="likeBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span id="likeText">Thích (124)</span>
+        </button>
+        <button class="btn-action" id="shareBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+          Chia Sẻ
+        </button>
+      </div>
+    </article>
+
+    <!-- Thêm hiệu ứng chúc mừng khi bấm like -->
+    <style>
+      .confetti {
+        position: fixed;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        z-index: 9999;
+        pointer-events: none;
+      }
+    </style>
+  </main>
+
+  <footer>
+    <div class="footer-logo">SAIGONFACES</div>
+    <div class="footer-text">&copy; 2026. All Rights Reserved.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Article Interaction Scripts -->
+  <script>
+    const likeBtn = document.getElementById('likeBtn');
+    const likeText = document.getElementById('likeText');
+    let isLiked = false;
+    let likeCount = 124;
+
+    likeBtn.addEventListener('click', (e) => {
+      isLiked = !isLiked;
+      if(isLiked) {
+        likeBtn.classList.add('liked');
+        likeCount++;
+        likeText.innerText = `Đã Thích (${likeCount})`;
+        
+        // Small heart pop animation using GSAP
+        gsap.fromTo('.heart-icon', 
+          { scale: 1 }, 
+          { scale: 1.5, duration: 0.15, yoyo: true, repeat: 1, fill: 'currentColor' }
+        );
+      } else {
+        likeBtn.classList.remove('liked');
+        likeCount--;
+        likeText.innerText = `Thích (${likeCount})`;
+        gsap.to('.heart-icon', { fill: 'none', duration: 0.2 });
+      }
+    });
+
+    const shareBtn = document.getElementById('shareBtn');
+    shareBtn.addEventListener('click', () => {
+      const originalText = shareBtn.innerHTML;
+      shareBtn.innerHTML = 'Đã sao chép liên kết!';
+      
+      // Flash animation
+      gsap.fromTo(shareBtn, { backgroundColor: 'white', color: 'black' }, { backgroundColor: 'transparent', color: 'white', duration: 0.4, delay: 1 });
+      
+      setTimeout(() => {
+        shareBtn.innerHTML = originalText;
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
